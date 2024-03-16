@@ -2,22 +2,19 @@ import express from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
 import * as helper from "./functions.js";
-import path from "path";
 import dotenv from "dotenv";
-import { fileURLToPath } from "url";
 
-// Resolve the current directory using ES6 module's __dirname equivalent
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+
 dotenv.config();
-// Set the views directory and view engine
+
 const app = express();
 const port = 3000;
 const myKey = process.env.myKey;
 const baseUrl = "https://api.openweathermap.org/data/2.5/weather";
-app.set("views", path.join(__dirname, "..", "views"));
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static("../public"));
+app.use(express.static("./public"));
 
 
 app.get("/", (req, res) => {
