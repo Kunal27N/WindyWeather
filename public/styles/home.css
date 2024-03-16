@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../images/home.avif);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+.input__container--variant {
+  background: linear-gradient(to bottom, #f3fff9, #f3fff9);
+  border-radius: 30px;
+  max-width: 13em;
+  padding: 1em 1em;
+}
+
+.shadow__input--variant {
+  filter: blur(25px);
+  border-radius: 30px;
+  background-color: #f3fff9;
+  opacity: 0.5;
+}
+
+.input__button__shadow--variant {
+  border-radius: 15px;
+  background-color: #07372c;
+  padding: 10px;
+  border: none;
+  cursor:pointer;
+}
+
+.input__button__shadow--variant:hover {
+  background-color: #3c6659;
+}
+
+.input__search--variant {
+  width: 13em;
+  align-items: center;
+  border-radius: 13em;
+  outline: none;
+  border: none;
+  padding: 0.8em;
+  font-size: 1.2em;
+  color: #002019;
+  background-color: transparent;
+}
+
+.input__search--variant::placeholder {
+  color: #002019;
+  opacity: 0.7;
+}
+
+.input__container--variant {
+  margin-top: 2rem;
+  background: linear-gradient(to bottom, #f3fff9, #f3fff9);
+  border-radius: 1.5em;
+  max-width: 14em;
+  padding: 1em;
+  box-shadow: 0em 1em 3em #beecdc64;
+}
+
+.main {
+  padding: 4rem;
+  background-color: rgba(0, 0, 0, 0.415);
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 10px #0a3c93;
+  backdrop-filter: blur(10px);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+span {
+  color: azure;
+  font-size: 3rem;
+}
+.myLogo {
+  height: 10vh;
+  width: 50h;
+}
